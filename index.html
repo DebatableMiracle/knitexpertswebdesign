@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<style>
+  /* Style for the floating contact widget */
+  .floating-contact-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+  }
+
+  .contact-button {
+      background-color: #db3434;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px !important; /* Adjust the size as needed */
+      height: 50px !important; /* Adjust the size as needed */
+      font-size: 20px; /* Adjust the icon size */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden; /* Ensure perfect circle */
+  }
+
+  .contact-form {
+      display: none;
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1001;
+  }
+
+  /* Additional styling for your form elements goes here */
+</style>
+
+<html>
+  <head>
+    <title>KNITEXPERTS | HOME</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1><a href="index.html">KNITEXPERTS</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="generic.html">Generic</a></li>
+                  <li><a href="elements.html">Elements</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                  <li><a href="#">Log In</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>KNITEXPERTS</h2>
+          <p>
+            We are a professionally managed outsourcing <br />
+            company specialized in knitted fabric <br />
+            for Garments, Home Furnishing, Leather,<br />
+            footwear and Industrial products.<br />
+          </p>
+          <ul class="actions special">
+            <li><a href="#" class="button primary">Get Started</a></li>
+          </ul>
+        </div>
+        <a href="#one" class="more scrolly">Learn More</a>
+      </section>
+      <!-- Floating contact widget -->
+    <div class="floating-contact-widget">
+      <button id="open-contact-form" class="contact-button">
+        <i class="fas fa-envelope"></i>
+    </button>
+    
+      </button>
+      <div id="contact-form" class="contact-form">
+          <!-- Your contact form HTML goes here -->
+          <form action="submit_form.php" method="post">
+              <!-- Your form fields go here -->
+              <input type="text" name="name" placeholder="Your Name">
+              <input type="email" name="email" placeholder="Your Email">
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button type="submit">Send Message</button>
+          </form>
+          <!-- Close button for the contact form -->
+          <button id="close-contact-form">Close</button>
+      </div>
+  </div>
+
+
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>ABOUT KNITEXPERTS<br /></h2>
+            <p>
+              KnitExperts is a leading fabric and yarn sourcing firm that
+              specializes<br />
+              in outsourcing textile fabric, serving as an agent and supplier
+              for knitted fabrics.<br />
+              We have a team of experts who have years of experience in the
+              industry.<br />
+              We work with a wide range of suppliers to offer our clients a
+              variety of options to choose from.<br />
+              We pride ourselves on providing all kind of fabrics, yarns and
+              garments at best in the market prices.
+            </p>
+          </header>
+          <ul class="icons major">
+            <li>
+              <span class="icon fa-gem major style1"
+                ><span class="label">Lorem</span></span
+              >
+            </li>
+            <li>
+              <span class="icon fa-heart major style2"
+                ><span class="label">Ipsum</span></span
+              >
+            </li>
+            <li>
+              <span class="icon solid fa-code major style3"
+                ><span class="label">Dolor</span></span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Two -->
+      <section id="two" class="wrapper alt style2">
+        <section class="spotlight">
+          <div class="image">
+            <img src="images/sarah-elizabeth-KwvNrCfTKMI-unsplash.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>KNITTED FABRIC SOURCING<br /></h2>
+            <p>
+              We specialize in sourcing knitted fabrics for our clients.<br />
+              We work with a wide range of suppliers to offer our clients<br />
+              a variety of options to choose from.
+            </p>
+          </div>
+        </section>
+        <section class="spotlight">
+          <div class="image">
+            <img
+              src="images/business-people-analyzing-statistics-financial-concept.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h2>KNITTING CONSULTING<br /></h2>
+            <p>
+              We provide fabric consulting services to our clients<br />
+              to help them make informed decisions about<br />
+              which fabrics to use for their projects.<br />
+              Our experts will guide you through the selection process.
+            </p>
+          </div>
+        </section>
+        <section class="spotlight">
+          <div class="image">
+            <img src="images/pexels-chris-f-3563556.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2>YARN OUTSOURCING<br /></h2>
+            <p>
+              We also provide our customers solutions to<br />
+              all their yarn related requirements <br />
+              with our wide network and years of experience.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Three -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <header class="major">
+            <h2>WHY CHOOSE US?</h2>
+            <p>
+              Discover the Unique Advantages of Partnering with KNITEXPERTS<br />
+              Elevate your business ventureswith our unrivaled expertise and
+              dedication to excellence.
+            </p>
+          </header>
+          <ul class="features">
+            <li class="icon fa-paper-plane">
+              <h3>2 Decades+ experience</h3>
+              <p>
+                With over 12 years of hands-on experience, we bring unparalleled
+                knowledge and insight to the yarn industry. Trust us to navigate
+                the intricacies and deliver exceptional results.
+              </p>
+            </li>
+            <li class="icon solid fa-laptop">
+              <h3>100+ specialized suppliers</h3>
+              <p>
+                Access a world of possibilities with our network of 100+
+                specialized suppliers. We handpick partners committed to
+                quality,< ensuring your business has the finest materials at its
+                disposal.
+              </p>
+            </li>
+            <li class="icon solid fa-gem">
+              <h3>50+ Affiliated Manufacturers</h3>
+              <p>
+                Benefit from our strong relationships with 50+ affiliated
+                manufacturers. Together, we tailor solutions to meet your unique
+                needs, guaranteeing top-tier yarn products for your market.
+              </p>
+            </li>
+            <li class="icon solid fa-heart">
+              <h3>1000+ Happy clients</h3>
+              <p>
+                Join the ranks of thousands of happy clients who have
+                experienced success through our collaboration. Your satisfaction
+                is our priority, and we strive to exceed your expectations in
+                every aspect of our partnership.
+              </p>
+              <!-- </li>
+            <li class="icon fa-heart">
+              <h3>Aenean Primis</h3>
+              <p>
+                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
+                tincidunt nullam amet leo Aenean ligula consequat consequat.
+              </p>
+            </li>
+            <li class="icon fa-flag">
+              <h3>Tortor Ut</h3>
+              <p>
+                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
+                tincidunt nullam amet leo Aenean ligula consequat consequat.
+              </p>
+            </li> -->
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <!-- <section id="cta" class="wrapper style4">
+        <div class="inner">
+          <header>
+            <h2>Arcue ut vel commodo</h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum endrerit imperdiet
+              amet eleifend fringilla.
+            </p>
+          </header>
+          <ul class="actions stacked">
+            <li><a href="#" class="button fit primary">Activate</a></li>
+            <li><a href="#" class="button fit">Learn More</a></li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="inner">
+          <section>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="field half">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="6"></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input type="submit" value="Send Message" class="primary" />
+                </li>
+                <li><input type="reset" value="Clear" /></li>
+              </ul>
+            </form>
+          </section>
+          <section class="split">
+            <section>
+              <div class="contact-method">
+                <h3>GET IN TOUCH TODAY!</h3>
+                <span
+                  >Get in touch today with us to discuss<br />
+                  your fabric and yarn needs.<br />
+                  We look forward to our next dealings!</span
+                >
+              </div>
+            </section>
+            <section>
+              <div class="contact-method">
+                <span class="icon solid alt fa-envelope"></span>
+                <h3>Email</h3>
+                <a href="#">info@knitexperts.in</a>
+              </div>
+            </section>
+            <section>
+              <div class="contact-method">
+                <span class="icon solid alt fa-phone"></span>
+                <h3>Phone</h3>
+                <span> +91 9818026572</span>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands fa-dribbble"
+              ><span class="label">Dribbble</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Untitled</li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          // Open the contact form
+          document.getElementById("open-contact-form").addEventListener("click", function () {
+              document.getElementById("contact-form").style.display = "block";
+          });
+  
+          // Close the contact form
+          document.getElementById("close-contact-form").addEventListener("click", function () {
+              document.getElementById("contact-form").style.display = "none";
+          });
+      });
+  </script>
+  
+  </body>
+</html>
